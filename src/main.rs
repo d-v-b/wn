@@ -59,15 +59,6 @@ fn play_noise(request: &NoiseRequest) {
     std::thread::sleep(request.duration);
 }
 
-/*
-    let request = NoiseRequest{
-        flavor: NoiseFlavor::Blue, 
-        amplitude: 0.10, 
-        duration: Duration::from_secs(10)};
-    play_noise(&request);
-
-*/
-
 fn main() {
     let args = Args::parse();
     let request = NoiseRequest{
